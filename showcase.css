@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, gray, skyblue);
+  background-size: 400% 400%;
+  animation: bgMove 10s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 25px;
+  font-size: 25px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+nav a:hover {
+  color: aqua;
+  background: rgba(247, 224, 224, 0.363);
+  backdrop-filter: blur(5px);
+  transition: 1.2s;
+}
+
+main {
+  max-width: 900px;
+  margin: 150px auto 40px auto;
+  background: rgba(211, 211, 211, 1);
+  padding: 25px;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  
+}
+
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(169, 169, 169, 1);
+  transition: transform 0.3s;
+}
+ 
+
+section:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 100px rgb(104, 103, 103);
+}
+
+
+h1 {
+  text-align: center;
+  color: #2d4d5c;
+  font-size: 40px;
+}
+
+h2 {
+  border-left: 4px solid #72A9B8;
+  padding-left: 10px;
+  color: #2d4d5c;
+}
+
+canvas {
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  iframe {
+    height: 220px;
+  }
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 18px 0;
+  font-size: 25px;
+  color: white;
+  margin-top: 50px;
+  backdrop-filter: blur(5px);
+}
